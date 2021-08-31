@@ -10,4 +10,7 @@ function some_assets() {
 add_action( 'wp_enqueue_scripts', 'some_assets' );
 
 show_admin_bar(false);
+
+add_theme_support('post-thumbnails');
+add_theme_support('post-thumbnails',array('card'));
 ?>
