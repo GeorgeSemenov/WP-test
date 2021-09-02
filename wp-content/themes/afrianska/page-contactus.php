@@ -1,4 +1,4 @@
-<?php get_header()?>
+<?php get_header('contactus')?>
 <?php /**Template Name: "contactus" */ ?>
 <main><div class="page-title"><h3 class="page-title__header main-content-frames">Contact Us</h3><p class="page-title__description main-content-frames">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div><div class="contact-us-screen main-content-frames contact-us-screen_add_mb"><div class="contact-us contact-us-screen__contact-us"><img class="contact-us__img" width="300" height="181" src="./images/buisness-woman.png" alt="buisness-woman"><div class="contact-us__contacts-list-container"><h2 class="contact-us__list-header">ADDRESS</h2><ul class="contact-us__contacts-list"><li class="contact-us__list-item"><?php echo get_post_meta(get_the_ID(), 'adressuperniga' , true); ?></li></ul></div><div class="contact-us__contacts-list-container contact-us__contacts-list-container_phones"><h2 class="contact-us__list-header">PHONE</h2><ul class="contact-us__contacts-list"><li class="contact-us__list-item contact-us__list-item_phone">+62-812-7313-4321</li><li class="contact-us__list-item contact-us__list-item_phone">+62-817-000-1234</li></ul></div><div class="contact-us__contacts-list-container contact-us__contacts-list-container_services"><h2 class="contact-us__list-header">ONLINE SERVICE</h2><ul class="contact-us__contacts-list">
   <?php
@@ -18,7 +18,8 @@
   foreach( $posts as $post ){
     setup_postdata($post);
     ?>
-      <li class="contact-us__list-item contact-us__list-item_service"><?php the_title(); ?></li>
+      <li class="<?php echo get_post_meta(get_the_ID(), 'sample-2' , true)."contact-us__list-item contact-us__list-item_service" ?>"><?php the_title(); ?></li>
+      <span><?php echo get_post_meta(get_the_ID(), 'sample' , true)?></span>
     <?php 
   }
   wp_reset_postdata(); // сброс
