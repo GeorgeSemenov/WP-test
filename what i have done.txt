@@ -1,5 +1,14 @@
 https://www.youtube.com/watch?v=DniiviK8QVo&list=PLCMvV-acWe2C3ruTp6kzHU7FqlErsl2nR&index=3
 /************************************Создание новой темы*****************************************************************************/
+wp acc: goshgeusman@gmail.com
+   pas: DJHgfh1GHBvyt
+ВОРДПРЕССпароль1ПРИДУМАЛмне
+
+FTP IP	ftp://45.84.204.220
+Имя хоста FTP	ftp://jegoteam.com
+Имя пользователя FTP	u472674736
+FTP порт	21
+Папка для загрузки файлов	public_html
 
 в файле style.css прописывается свойства темы 
 скопировал все файлы старого сайта в папку assets
