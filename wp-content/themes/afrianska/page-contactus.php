@@ -18,7 +18,16 @@
   foreach( $posts as $post ){
     setup_postdata($post);
     ?>
-      <li class="<?php echo get_post_meta(get_the_ID(), 'sample-2' , true)."contact-us__list-item contact-us__list-item_service" ?>"><?php the_title(); ?></li>
+      <li class="<?php echo get_post_meta(get_the_ID(), 'sample-2' , true)."contact-us__list-item contact-us__list-item_service" ?>">
+        <?php 
+            $photo = get_post_meta(get_the_ID(), 'contact-image' , true); /*возвращяет ссылку на метаполе(кастомное поле, не основное поле) в дополнительном поле pod'а.*/ 
+            $fullImg = pods_image_url($photo['ID'],'large');/*Возвращает ссылку на картинку, которая хранится в метаполе, ссылку на которое мы сохранили в $photo*/
+    
+            echo '<img src="'.$fullImg.'" alt="Image placeholder"';
+
+          the_title(); 
+        ?>          
+      </li>
       <span><?php echo get_post_meta(get_the_ID(), 'sample' , true)?></span>
     <?php 
   }
