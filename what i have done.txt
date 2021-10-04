@@ -10,6 +10,9 @@ FTP IP	ftp://45.84.204.220
 FTP порт	21
 Папка для загрузки файлов	public_html
 
+local WP acc : Goshanbo
+local WP pass: 123 
+
 в файле style.css прописывается свойства темы 
 скопировал все файлы старого сайта в папку assets
 из index.html всё сохраняешь в index.php
