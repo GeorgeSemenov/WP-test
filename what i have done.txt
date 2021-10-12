@@ -13,6 +13,11 @@ FTP порт	21
 local WP acc : Goshanbo
 local WP pass: 123 
 
+jegoteam WP http://jegoteam.com/sites/WP-tes
+acc: wp-testAdmon
+pas: Elyt:Bj,3HF
+Удалось не жидко обделаться 3 РАЗА
+
 в файле style.css прописывается свойства темы 
 скопировал все файлы старого сайта в папку assets
 из index.html всё сохраняешь в index.php
